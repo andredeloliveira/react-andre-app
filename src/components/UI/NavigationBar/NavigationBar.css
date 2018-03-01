@@ -1,0 +1,28 @@
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 20px;
+  list-style: none;
+}
+
+
+.navbar-item:before {
+  content: '\232a';
+  margin-right: 5px;
+}
+
+.navbar-item {
+  background: transparent;
+  padding: 10px;
+  text-align: left;
+  width: 400px;
+  color: rgb(56, 165, 5);
+}
+
+
+.navbar-item:hover {
+  cursor: crosshair;
+  background: rgb(56, 165, 5);
+  color: black;
+}

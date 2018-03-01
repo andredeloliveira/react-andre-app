@@ -1,0 +1,18 @@
+.main-button {
+  padding: 8px;
+  background-color: transparent;
+  border: 1px solid rgb(15, 105, 12);
+  border-radius: 6px;
+  color: rgb(15, 105, 12);
+  text-decoration: none;
+}
+
+.main-button:hover {
+  border-color: white;
+  color: white;
+  text-decoration: none;
+}
+
+.main-button:visited {
+  color: rgb(131, 5, 5);
+}

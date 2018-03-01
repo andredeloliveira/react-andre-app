@@ -1,0 +1,13 @@
+.main-container {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.name-container {
+  font-size: 4em;
+  color: indigo;
+}
+
+.description-container {
+  font-size: 2em;
+  color: white;
+}
