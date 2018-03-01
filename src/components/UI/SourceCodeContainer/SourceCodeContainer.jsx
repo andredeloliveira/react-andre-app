@@ -1,16 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Typist from 'react-typist';
 import './SourceCodeContainer.css';
 
 const sourceCodeContent = {
   about: (
     <div className='about-container'>
-      <div className="line">
+      <Typist>
+        $ >
+        <span className="front-end">
         Front-End -> {['Javascript, ', 'React, ', 'Redux, ', 'HTML, ', 'CSS, ', 'SCSS']}
-      </div>
-      <div className="line2">
-        Back-End -> Elixir, Serverless, Node.js, Java, AWS, Google Cloud, MongoDB, MySQL, PostgreSQL
-      </div>
+        </span>
+        <Typist.Delay ms={200} />
+        <br />
+        $ >
+        <span className="back-end">
+          Back-End -> Elixir, Serverless, Node.js, Java, AWS, Google Cloud, MongoDB, MySQL, PostgreSQL
+        </span>
+      </Typist>
     </div>
   ),
   projects: {
@@ -36,6 +43,11 @@ class SourceCodeContainer  extends React.PureComponent {
 
   render () {
     const {content} = this.props;
+    const animation = {
+      transitionName: 'animation',
+      transitionEnterTimeout: 500,
+      transitionLeaveTimeout: 500
+    };
     return (
       <div>
         <div className="menu">
@@ -44,8 +56,7 @@ class SourceCodeContainer  extends React.PureComponent {
           <div className="buttons zoom"></div>
         </div>
         <div className="screen">
-        {this._renderSourceCodeContent(content)}
-        <div className="line2">><span className="cursor4">_</span></div>
+          $ > {this._renderSourceCodeContent(content)}
         </div>
       </div>
     )  
