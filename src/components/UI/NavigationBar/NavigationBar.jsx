@@ -1,19 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {List} from 'immutable';
+import {Link} from 'react-router-dom';
 import './NavigationBar.css';
 
 class NavigationBar extends React.PureComponent {
 
   static propTypes = {
-    links: PropTypes.instanceOf(List),
-    onClick: PropTypes.func
+    items: PropTypes.instanceOf(List),    
   };
 
-  handleClick = (item, event) => {
-    const {onClick} = this.props;
-    onClick && onClick(item.toLowerCase());
-  }
 
 
   _renderItems = () => {
@@ -22,9 +18,8 @@ class NavigationBar extends React.PureComponent {
       return (
         <li 
           key={item}
-          onClick={this.handleClick.bind(this, item)}
           className='navbar-item'>
-          {item}
+          <Link to={`/${item.toLowerCase()}`}>{item}</Link>
         </li>
       );
     })

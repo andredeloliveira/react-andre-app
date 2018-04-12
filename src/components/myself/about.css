@@ -1,0 +1,25 @@
+.about {
+  text-align: left;
+  margin-left: 100px;
+}
+
+h3 {
+  color: rgb(231, 45, 45);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  color: green;
+}
+
+.span-list {
+  color: orange;
+}
+
+.wow {
+  font-size: 1.1em;
+  color: pink;
+}
