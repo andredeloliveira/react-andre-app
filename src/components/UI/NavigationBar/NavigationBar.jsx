@@ -19,7 +19,9 @@ class NavigationBar extends React.PureComponent {
         <li 
           key={item}
           className='navbar-item'>
-          <Link to={`/${item.toLowerCase()}`}>{item}</Link>
+          <Link to={`/${item.toLowerCase()}`}
+            style={{color: 'green', width: '100%'}}
+          >{item}</Link>
         </li>
       );
     })

@@ -2,11 +2,10 @@ import React from 'react';
 import './projects.css';
 
 const Projects = () => (
-  <div> 
-    <h3>Some of the projects that I've been working on</h3>
+  <div className='projects'> 
+    <h3>These are the open source projects that I've been working on</h3>
     <ul>
-      <li>Special</li>
-      <li>Simplest Serverless</li>
+      <li><a href='https://github.com/andredeloliveira/simplest-serverless'>Simplest Serverless</a></li>
     </ul>
   </div>
 );

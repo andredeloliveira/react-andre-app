@@ -1,10 +1,15 @@
 import React from 'react';
+import './social.css';
 
 const Social = () => (
-  <div> here is where you can find me online
+  <div className='social'> 
+    <h3>here is where you can find me online</h3>
     <ul>
       <li>
-        LOL
+         <a href="https://github.com/andredeloliveira">Github</a>
+      </li>
+      <li>
+         <a href="https://linkedin.com/in/andredeoliveira1">LinkedIn</a>
       </li>
     </ul>
   </div>
