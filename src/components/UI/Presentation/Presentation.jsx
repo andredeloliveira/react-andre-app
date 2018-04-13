@@ -1,8 +1,9 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import './Presentation.css';
 
 const Presentation = (props) => (
-  <a href='/'>
+  <Link to='/' style={{textDecoratin: 'none'}}>
     <div className='main-container'>
       <p className='name-container'>
         {props.name}
@@ -11,7 +12,7 @@ const Presentation = (props) => (
         {props.description}
       </p>
     </div>
-  </a>
+  </Link>
 );
 
 export default Presentation;
