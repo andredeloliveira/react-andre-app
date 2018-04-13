@@ -3,12 +3,12 @@ import './Presentation.css';
 
 const Presentation = ({name, description}) => (
   <div className='main-container'>
-    <div className='name-container'>
+    <p className='name-container'>
       {name}
-    </div>
-    <div className='description-container'>
+    </p>
+    <p className='description-container'>
       {description}
-    </div>
+    </p>
   </div>
 );
 

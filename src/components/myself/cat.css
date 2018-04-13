@@ -4,4 +4,14 @@
 
 .lovely-cat {
   border-radius: 20px;
+  width: 60vh;
+}
+
+
+@media screen and (max-width: 400px) {
+
+  .lovely-cat {
+    width: 50vh;
+  }
+
 }

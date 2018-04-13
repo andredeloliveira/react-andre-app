@@ -2,7 +2,7 @@
   "name": "andre-pag",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://andredeloliveira.github.io/site",
+  "homepage": "https://andredeloliveira.github.io/react-andre-app",
   "dependencies": {
     "immutable": "^3.8.2",
     "react": "^16.2.0",

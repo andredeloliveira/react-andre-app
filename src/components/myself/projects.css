@@ -5,3 +5,11 @@
 a {
   color: rgb(231, 45, 45);
 }
+
+
+@media screen and (max-width: 400px) {
+
+  .projects {
+    margin: 0;
+  }
+}

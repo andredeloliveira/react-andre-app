@@ -23,3 +23,19 @@ li {
   font-size: 1.1em;
   color: pink;
 }
+
+@media screen and (max-width: 400px) {
+
+ .about {
+   margin: 0;
+ }
+
+ h3 {
+   margin-left: 10px;
+ }
+
+ p {
+   margin-left: 10px;
+ }
+
+}
